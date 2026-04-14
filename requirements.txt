@@ -1,6 +1,26 @@
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-streamlit
+# ============================================================
+# REQUIREMENTS.TXT
+# This file lists every Python package this project needs.
+# Install all of them at once by running:
+#   pip install -r requirements.txt
+# ============================================================
+
+# --- Data handling ---
+pandas        # Reading, cleaning, and working with tabular data (like CSV files)
+numpy         # Fast math operations on numbers and arrays
+
+# --- Machine learning ---
+scikit-learn  # Provides ML models (Random Forest, Linear Regression, etc.)
+statsmodels   # Used for time-series forecasting (predicting future sales)
+joblib        # Saves and loads trained ML models to/from disk (model.pkl)
+
+# --- Visualisation ---
+matplotlib    # Basic charting library (used internally by some modules)
+seaborn       # Makes nicer statistical charts (used internally)
+plotly        # Interactive charts shown in the Streamlit app (line, bar, scatter)
+
+# --- Web app ---
+streamlit     # Turns this Python script into a live web app you can use in a browser
+
+# --- PDF generation ---
+reportlab     # Creates PDF files — used by src/report_generator.py
